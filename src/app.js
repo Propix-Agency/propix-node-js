@@ -26,6 +26,17 @@ app.use(
 );
 
 // ==========================================
+// Health Check
+// ==========================================
+
+app.get('/health', (_req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Propix API is running',
+  });
+});
+
+// ==========================================
 // 404 - Not Found
 // ==========================================
 
@@ -57,16 +68,7 @@ const errorHandler = (error, _req, res, _next) => {
   });
 };
 
-// ==========================================
-// Health Check
-// ==========================================
 
-app.get('/health', (_req, res) => {
-  res.status(200).json({
-    success: true,
-    message: 'Propix API is running',
-  });
-});
 
 app.use(errorHandler);
 
