@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "nodemon ./src/index.js",
     "build": "node --check ./src/index.js",
-    "start": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
     "test": "vitest run",
     "test:watch": "vitest"
   },
