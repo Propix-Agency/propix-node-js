@@ -1,0 +1,64 @@
+{
+  "name": "propix-node-js",
+  "version": "1.0.0",
+  "description": "Propix Backend API Server",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "tsx watch ./src/index.js",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "start": "node ./dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "propix",
+    "propix-agency",
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "backend",
+    "rest-api",
+    "typescript",
+    "vitest"
+  ],
+  "author": {
+    "name": "Abed Slayman",
+    "email": "abedslayman1982@abloper.com",
+    "nickname": "AbLoper",
+    "url": "https://www.abloper.com"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Propix-Agency/propix-node-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Propix-Agency/propix-node-js/issues"
+  },
+  "homepage": "https://github.com/Propix-Agency/propix-node-js#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "morgan": "^1.12.1",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.2",
+    "tsx": "^4.20.6",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  },
+  "dependencies": {
+    "body-parser": "^2.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.1",
+    "node-cron": "^4.6.0"
+  }
+}

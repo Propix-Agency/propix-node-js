@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "sourceMap": true
+  },
+  "include": ["src/**/*.ts", "src/config/Mongodb_Conx.js", "src/index.js", "src/app.js", "src/config/Google_Maps_API.js", "src/config/Firebase_Store_API.js", "src/config/CorsOptions.js", "src/middlewares/rateLimiter.js", "src/modules/users/user.authentication.model.test.js", "src/modules/users/user.authentication.model.js", "src/modules/users/user.controller.js", "src/modules/users/user.HttpRequest.js", "src/modules/users/user.model.test.js", "src/modules/users/user.model.js", "src/modules/users/user.researcher.model.js", "src/modules/users/user.routes.js", "src/modules/users/user.service.test.js", "src/modules/users/user.service.js", "src/modules/users/user.setting.js"],
+  "exclude": ["node_modules", "dist", "src/**/*.test.ts", "src/**/*.spec.ts"]
+}
