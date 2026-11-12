@@ -57,6 +57,17 @@ const errorHandler = (error, _req, res, _next) => {
   });
 };
 
+// ==========================================
+// Health Check
+// ==========================================
+
+app.get('/health', (_req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Propix API is running',
+  });
+});
+
 app.use(errorHandler);
 
 export default app;

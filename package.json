@@ -4,15 +4,14 @@
   "description": "Propix Backend API Server",
   "private": true,
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "engines": {
     "node": ">=20.19.0"
   },
   "scripts": {
-    "dev": "tsx watch ./src/index.js",
-    "build": "tsc",
-    "type-check": "tsc --noEmit",
-    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.js",
+    "build": "node --check ./src/index.js",
+    "start": "nodemon ./src/index.js",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -45,12 +44,10 @@
   "homepage": "https://github.com/Propix-Agency/propix-node-js#readme",
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^26.6.6",
     "morgan": "^1.12.1",
     "nodemon": "^3.1.14",
     "supertest": "^7.3.2",
     "tsx": "^4.20.6",
-    "typescript": "^7.0.2",
     "vitest": "^4.1.12"
   },
   "dependencies": {
