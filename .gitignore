@@ -1,6 +1,5 @@
-
 # ==========================================
-# Node.js
+# Node.js & Package Managers
 # ==========================================
 
 node_modules/
@@ -10,14 +9,14 @@ yarn-error.log*
 pnpm-debug.log*
 
 # ==========================================
-# Build Output
+# Build Output & Frameworks
 # ==========================================
 
 dist/
 build/
-.cache/
 .next/
 out/
+.cache/
 
 # ==========================================
 # TypeScript
@@ -26,7 +25,7 @@ out/
 *.tsbuildinfo
 
 # ==========================================
-# Testing
+# Testing & Coverage
 # ==========================================
 
 coverage/
@@ -50,8 +49,8 @@ logs/
 *.log
 pids/
 *.pid
+*.seed
 *.pid.lock
-.pids/
 
 # ==========================================
 # PM2
@@ -61,7 +60,7 @@ pm2.log
 *.pm2.log
 
 # ==========================================
-# MongoDB Dumps
+# MongoDB
 # ==========================================
 
 dump/
@@ -78,15 +77,20 @@ desktop.ini
 # Editors & IDEs
 # ==========================================
 
-.vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
 
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
 # ==========================================
-# Temporary & Backup Files
+# Temporary, Cache & Backup Files
 # ==========================================
 
+.tmp/
+.temp/
 *.tgz
 *.bak
 *.swp
@@ -95,20 +99,26 @@ desktop.ini
 *.rej
 
 # ==========================================
-# Docker Temporary Files
+# Docker
 # ==========================================
 
+.docker/
 docker-compose.override.yml
 docker-compose-dev.yml
 Dockerfile.dev
-.docker/
 *.tar
 *.img
 
 # ==========================================
-# Project Reference Files
+# Project Reference & Development Data
 # ==========================================
 
 reference/
 md/
 Mock_Data/
+
+# ==========================================
+# Local Tooling
+# ==========================================
+
+.eslintcache

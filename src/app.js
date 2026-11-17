@@ -1,4 +1,5 @@
 import express from 'express';
+import morgan from 'morgan'
 
 const app = express();
 
@@ -11,6 +12,8 @@ app.disable('x-powered-by');
 // ==========================================
 // Global Middlewares
 // ==========================================
+
+app.use(morgan('combined'));
 
 app.use(
   express.json({
