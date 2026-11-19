@@ -1,0 +1,81 @@
+/* =====================================================
+   Base (xs) — Mobile First  <576px
+   ===================================================== */
+
+:root {
+  --fs-h1: clamp(18px, 5vw, 28px);
+  --fs-h2: clamp(14px, 4vw, 24px);
+  --fs-body: clamp(10px, 3vw, 16px);
+}
+
+.marginTopHome {
+  margin-top: 6rem;
+}
+
+/* =====================================================
+   Small devices (sm) ≥576px
+   ===================================================== */
+
+@media (min-width: 576px) {
+  :root {
+    --fs-h1: clamp(26px, 4vw, 34px);
+    --fs-h2: clamp(20px, 3.5vw, 28px);
+    --fs-body: clamp(15px, 2.8vw, 17px);
+  }
+}
+
+/* =====================================================
+   Medium devices (md) ≥768px
+   ===================================================== */
+
+@media (min-width: 768px) {
+  :root {
+    --fs-h1: clamp(30px, 3vw, 40px);
+    --fs-h2: clamp(22px, 2.5vw, 32px);
+    --fs-body: clamp(16px, 2vw, 18px);
+  }
+
+  .navbar-toggler {
+    color: #fff;
+  }
+
+  .menus {
+    background: linear-gradient(to right, #1b3b6f, transparent);
+  }
+}
+
+/* =====================================================
+   Large devices (lg) ≥992px
+   ===================================================== */
+
+@media (min-width: 992px) {
+  :root {
+    --fs-h1: clamp(34px, 2.5vw, 48px);
+    --fs-h2: clamp(26px, 2vw, 36px);
+    --fs-body: clamp(16px, 1.6vw, 19px);
+  }
+}
+
+/* =====================================================
+   Extra large devices (xl) ≥1200px
+   ===================================================== */
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-h1: clamp(40px, 2vw, 56px);
+    --fs-h2: clamp(30px, 1.6vw, 40px);
+    --fs-body: clamp(17px, 1.3vw, 20px);
+  }
+
+  .marginTopHome {
+    margin-top: 10rem;
+  }
+}
+
+/* =====================================================
+   Extra extra large devices (xxl) ≥1400px
+   ===================================================== */
+
+@media (min-width: 1400px) {
+  /* جاهز للتوسعة مستقبلاً */
+}

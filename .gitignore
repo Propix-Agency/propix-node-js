@@ -116,6 +116,7 @@ Dockerfile.dev
 reference/
 md/
 Mock_Data/
+*.txt
 
 # ==========================================
 # Local Tooling
